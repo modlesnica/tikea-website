@@ -1,11 +1,13 @@
 # UWAGA: logowanie z GitHubem wymaga zewnętrznej konfiguracji OAuth.
 # Nie należy umieszczać tutaj sekretów ani tokenów.
+
 backend:
   name: github
   repo: modlesnica/tikea-website
   branch: main
-  # base_url: https://ADRES-WLASNEGO-PROXY-OAUTH
-  # auth_endpoint: auth
+  base_url: https://tikea-cms-auth.orkiestra.workers.dev
+  auth_endpoint: auth
+
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 locale: pl
