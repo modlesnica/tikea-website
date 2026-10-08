@@ -22,16 +22,16 @@
   ],
   "events": [
     {
-      "date_label": "12.06.2027",
+      "date_label": "12.06.2028",
       "title": "Koncert w Zamku Książęcym Niemodlin",
-      "place": "Zamek Książęcy Niemodlin · godz. 19:30"
+      "place": "Niemodlin · godz. 19:30"
     }
   ],
   "news": [
     {
       "category": "Aktualności",
       "title": "Witamy na stronie TIKEA",
-      "description": "Tu będziemy informować o naszych działaniach, wydarzeniach i projektach.",
+      "description": "Tu będziemy informować o naszych działaniach, wydarzeniach i projektach mbo.",
       "url": ""
     }
   ]
