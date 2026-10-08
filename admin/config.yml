@@ -1,0 +1,44 @@
+# UWAGA: logowanie z GitHubem wymaga zewnętrznej konfiguracji OAuth.
+# Nie należy umieszczać tutaj sekretów ani tokenów.
+backend:
+  name: github
+  repo: modlesnica/tikea-website
+  branch: main
+  # base_url: https://ADRES-WLASNEGO-PROXY-OAUTH
+  # auth_endpoint: auth
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+locale: pl
+collections:
+  - name: "ustawienia"
+    label: "Treści strony"
+    files:
+      - name: "strona"
+        label: "Projekty, wydarzenia i aktualności"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - { label: "Adres e-mail do kontaktu", name: "email", widget: "string", required: false }
+          - label: "Projekty"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Kategoria", name: "category", widget: "string" }
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Opis", name: "description", widget: "text" }
+              - { label: "Link (opcjonalny)", name: "url", widget: "string", required: false }
+          - label: "Wydarzenia"
+            name: "events"
+            widget: "list"
+            fields:
+              - { label: "Data wyświetlana", name: "date_label", widget: "string" }
+              - { label: "Nazwa wydarzenia", name: "title", widget: "string" }
+              - { label: "Miejsce i godzina", name: "place", widget: "string" }
+          - label: "Aktualności"
+            name: "news"
+            widget: "list"
+            fields:
+              - { label: "Kategoria", name: "category", widget: "string" }
+              - { label: "Tytuł", name: "title", widget: "string" }
+              - { label: "Treść", name: "description", widget: "text" }
+              - { label: "Link (opcjonalny)", name: "url", widget: "string", required: false }
