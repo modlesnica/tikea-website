@@ -1,14 +1,38 @@
 {
   "email": "",
   "projects": [
-    {"category":"Projekt kulturalny","title":"Tam gdzie ładnie… brzmi Orkiestra!","description":"Koncerty, warsztaty i działania muzyczne wspierające lokalną społeczność.","url":""},
-    {"category":"Edukacja muzyczna","title":"Muzykowanie od podstaw","description":"Inicjatywy na rzecz rozwijania pasji i umiejętności muzycznych.","url":""},
-    {"category":"Nasze działania","title":"Warsztaty i spotkania","description":"Wspólna nauka, integracja i budowanie relacji poprzez muzykę.","url":""}
+    {
+      "category": "Projekt kulturalny",
+      "title": "Tam gdzie ładnie… gra Orkiestra!",
+      "description": "Koncerty, warsztaty i działania muzyczne wspierające lokalną społeczność.",
+      "url": ""
+    },
+    {
+      "category": "Edukacja muzyczna",
+      "title": "Muzykowanie od podstaw",
+      "description": "Inicjatywy na rzecz rozwijania pasji i umiejętności muzycznych.",
+      "url": ""
+    },
+    {
+      "category": "Nasze działania",
+      "title": "Warsztaty i spotkania",
+      "description": "Wspólna nauka, integracja i budowanie relacji poprzez muzykę.",
+      "url": ""
+    }
   ],
   "events": [
-    {"date_label":"12.06.2027","title":"Koncert w Zamku Książęcym Niemodlin","place":"Zamek Książęcy Niemodlin · godz. 19:30"}
+    {
+      "date_label": "12.06.2027",
+      "title": "Koncert w Zamku Książęcym Niemodlin",
+      "place": "Zamek Książęcy Niemodlin · godz. 19:30"
+    }
   ],
   "news": [
-    {"category":"Aktualności","title":"Witamy na stronie TIKEA","description":"Tu będziemy informować o naszych działaniach, wydarzeniach i projektach.","url":""}
+    {
+      "category": "Aktualności",
+      "title": "Witamy na stronie TIKEA",
+      "description": "Tu będziemy informować o naszych działaniach, wydarzeniach i projektach.",
+      "url": ""
+    }
   ]
 }
