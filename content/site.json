@@ -1,10 +1,10 @@
 {
-  "email": "",
+  "email": "orkiestra@tikea.org.pl",
   "projects": [
     {
       "category": "Projekt kulturalny",
       "title": "Tam gdzie ładnie… gra Orkiestra!",
-      "description": "Koncerty, warsztaty i działania muzyczne wspierające lokalną społeczność. MBO",
+      "description": "Koncerty, warsztaty i działania muzyczne wspierające lokalną społeczność.",
       "url": ""
     },
     {
@@ -31,7 +31,7 @@
     {
       "category": "Aktualności",
       "title": "Witamy na stronie TIKEA",
-      "description": "Tu będziemy informować o naszych działaniach, wydarzeniach i projektach mbo.",
+      "description": "Tu będziemy informować o naszych działaniach, wydarzeniach i projektach.",
       "url": ""
     }
   ]
