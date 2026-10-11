@@ -18,18 +18,13 @@
       "title": "Warsztaty i spotkania",
       "description": "Wspólna nauka, integracja i budowanie relacji poprzez muzykę.",
       "url": ""
-    },
-    {
-      "category": "AUTOMATYCZNA AKTUALIZACJA DZIAŁA",
-      "title": "AUTOMATYCZNA AKTUALIZACJA DZIAŁA",
-      "description": "AUTOMATYCZNA AKTUALIZACJA DZIAŁA"
     }
   ],
   "events": [
     {
-      "date_label": "12.06.2028",
-      "title": "Koncert w Zamku Książęcym Niemodlin",
-      "place": "Niemodlin · godz. 19:30"
+      "date_label": "19.12.2026",
+      "title": "Koncert świąteczny w Zdzieszowicach",
+      "place": "Zdzieszowice, kościół pw. o. Pio"
     }
   ],
   "news": [
