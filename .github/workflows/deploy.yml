@@ -1,0 +1,49 @@
+
+name: Publikacja strony TIKEA na OVH
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tikea-ovh-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Wyslij strone na OVH
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Pobierz pliki z GitHub
+        uses: actions/checkout@v4
+
+      - name: Zainstaluj klienta SFTP
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Wyslij pliki na serwer
+        env:
+          OVH_HOST: ${{ secrets.OVH_HOST }}
+          OVH_USER: ${{ secrets.OVH_USER }}
+          OVH_PASSWORD: ${{ secrets.OVH_PASSWORD }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          lftp -u "$OVH_USER","$OVH_PASSWORD" "sftp://$OVH_HOST:22" <<'LFTP'
+          set cmd:fail-exit yes
+          set sftp:connect-program "ssh -a -x -o StrictHostKeyChecking=accept-new"
+          set net:max-retries 2
+          cd /home/tikeaoe
+          put index.html -o www/index.html
+          mirror --reverse --verbose --no-perms assets www/assets
+          mirror --reverse --verbose --no-perms content www/content
+          mirror --reverse --verbose --no-perms admin www/admin
+          bye
+          LFTP
